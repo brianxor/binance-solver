@@ -1,0 +1,24 @@
+{
+  "name": "binance-solver",
+  "version": "1.0.0",
+  "description": "Solver for binance image captcha",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "brianxor",
+  "license": "ISC",
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "deobfuscator": "^2.4.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2",
+    "redis": "^4.6.14",
+    "sharp": "^0.33.4",
+    "uuid": "^9.0.1"
+  }
+}
