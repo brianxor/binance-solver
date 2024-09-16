@@ -65,7 +65,7 @@ const getPrde = () => {
     values.push(randomInt);
   }
 
-  values.join(",");
+  return values.join(",");
 };
 
 const getBrla = () => {
