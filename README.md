@@ -16,7 +16,8 @@ Decided to open source this, the code is not great, this was also made a long ti
 ## Setup
 
 1. `git clone https://github.com/brianxor/binance-solver.git`
-2. `npm run start`
+2. `npm install`
+3. `npm run start`
 
 ## Usage
 
@@ -28,6 +29,8 @@ Base URL: `http://127.0.0.1:5000/`
 ### Endpoints
 
 - `/captcha/solve`
+
+Method: `POST`
 
 #### Request Body
 
@@ -46,3 +49,19 @@ Base URL: `http://127.0.0.1:5000/`
 | `ek`     | string | From `/getCaptcha`     | Yes       |
 | `captchaType`     | string | From `/getCaptcha`     | Yes       |
 | `tag`     | string | From `/getCaptcha`     | Yes       |
+
+#### Request Body Example
+```json
+{
+  "mode": "PAYLOAD",
+  "bizId": "login",
+  "captchaData": {
+    "sig": "",
+    "salt": "",
+    "path2": "",
+    "ek": "",
+    "captchaType": "BOX",
+    "tag": ""
+  }
+}
+```
