@@ -10,12 +10,12 @@ const processImage = async (url) => {
 
     for (let row = 0; row < 3; row++) {
       for (let col = 0; col < 3; col++) {
-        const x_min = col * squareSize;
-        const y_min = row * squareSize;
-        const x_max = x_min + squareSize - 1;
-        const y_max = y_min + squareSize - 1;
+        const xMin = col * squareSize;
+        const yMin = row * squareSize;
+        const xMax = xMin + squareSize - 1;
+        const yMax = yMin + squareSize - 1;
 
-        const croppedImage = await image.crop([x_min, y_min, x_max, y_max]);
+        const croppedImage = await image.crop([xMin, yMin, xMax, yMax]);
 
         croppedImages.push(croppedImage);
       }
